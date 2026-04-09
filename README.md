@@ -75,7 +75,7 @@ Use these 3 Basic Settings:
 
 ### 5 - Apply the Group Policy Object (GPO)
 1. Open Command Prompt or PowerShell on the workstation.
-2. Run this script - gpupdate /force
+2. Run this command-line tool - gpupdate /force
 3. Log into a user account from that organizational unit you applied the Group Policy object on, and check to see that the changes applied.
 
 ---
