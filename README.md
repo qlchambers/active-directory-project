@@ -1,8 +1,7 @@
 
 # Active Directory Lab Project - Step-by-Step Guide
 
-This is my guide that teaches you how to set up and test a VPN inside a Windows 10 virtual machine on Azure.
-This guide demonstrates how to install Proton VPN, connect, and verify your VPN connection.
+This is my guide that teaches you what Active Directory is, what it's used for, and how to set up an environment that automates the bulk creation of over 10,000 users. We will then organize those users into organizational units, and configure the accounts via Group Policy.
 ## What This Guide Is For
 
 Goal: Set up an Active Directory environment, create and configure a domain, use PowerShell to generate over 10,000 users, organize the accounts into organizational units (OUs), and apply Group Policy objects to manauge user settings and permissions. 
