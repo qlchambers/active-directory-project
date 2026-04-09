@@ -100,9 +100,7 @@ Use these 3 Basic Settings:
 
 ---
 
-## Skills Demonstrated
-
-- Active Directory administration
-- PowerShell scripting
-- Automation at scale
-- IT infrastructure setup
+### Notes and Tips 
+- Make sure the departments (HR, IT, FINANCE, SALES) exist in Active Directory exactly as written.
+- After applying a Group Policy to an OU, log in with a user account from that OU to make sure that the settings and restrictions are working properly.
+- Try changing Group Policy settings for different OUs!
