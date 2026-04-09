@@ -20,11 +20,6 @@ Environments and Technologies Used
 
 Active Directory (AD) is a Microsoft database that connects users with all of the network resources they need to get their work done. It stores the information of users, passwords, and devices. This allows administrators to manage the permissions and access to resources from one central location.
 
-It allows administrators to:
-- Create and manage user accounts
-- Control access to files and systems
-- Enforce security policies using Group Policy
-- Organize resources using Organizational Units (OUs)
 
 ## What is Active Directory used for?
 
@@ -82,21 +77,6 @@ Use these 3 Basic Settings:
 1. Open Command Prompt or PowerShell on the workstation.
 2. Run this script - gpupdate /force
 3. Log into a user account from that organizational unit you applied the Group Policy object on, and check to see that the changes applied.
-
-
-
----
-
-
----
-
-
----
-
-
-
----
-
 
 ---
 
