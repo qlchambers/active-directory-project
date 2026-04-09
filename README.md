@@ -78,6 +78,12 @@ Use these 3 Basic Settings:
 - User Configuration → Policies → Administrative Templates → Desktop → Desktop
 - In the panel on the right, double-click Screen saver timeout, then set it to 300 seconds (5 minutes), then Click OK.
 
+### 5 - Apply the Group Policy Object (GPO)
+1. Open Command Prompt or PowerShell on the workstation.
+2. Run this script - gpupdate /force
+3. Log into a user account from that organizational unit you applied the Group Policy object on, and check to see that the changes applied.
+
+
 
 ---
 
