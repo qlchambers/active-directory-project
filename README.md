@@ -44,7 +44,7 @@ Installation & Setup Steps
 
 ### 2 - Create Organizational Units (OUs)
 Open Active Directory Users and Computers.
-Right-click your domain (lab.local).
+Right-click your domain (qclouted.local).
 Select New → Organizational Unit.
 Create these OUs:
 Sales
@@ -60,7 +60,23 @@ Finance
 3. Click on the link below, and follow the instructions in the document. https://docs.google.com/document/d/1_3BeYu5J2PcIoxjmSKD9ya60L0NzdNTGK9vevE_I7zY/edit?usp=sharing
 
 
-### 4 - 
+### 4 - Configure Group Policy for Departments
+1. Now that you have all of your users, open group policy management on your Windows Server VM. You can do this by pressing the Windows Key, and "S" at the same time. Then, type in Group Policy Management. If you cannot find it, go to Server Manager, then Add Roles and Features, Features, and Group Policy Management to install it.
+2. In Group Policy management, right-click the organizational unit (OU) that you want to configure (example: HR) Then click on, "Create a GPO in this domain, and Link it here."
+3. Name the policy. (example: HR Basic Policy)
+
+Use these 3 Basic Settings:
+1. Minimimum Password Length
+- Computer Configuration → Policies → Windows Settings → Security Settings → Account Policies → Password Policy
+- In the right panel, double-click Minimum password length, then set 8 characters, then Click OK
+
+2. Prevent Desktop Background Changes.
+- User Configuration → Policies → Administrative Templates → Desktop → Desktop
+- In the right panel, double-click Prevent changing desktop background, then set it to Enabled, then click OK.
+
+3. Lock Screen Timeout
+- User Configuration → Policies → Administrative Templates → Desktop → Desktop
+- In the panel on the right, double-click Screen saver timeout, then set it to 300 seconds (5 minutes), then Click OK.
 
 
 ---
