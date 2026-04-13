@@ -94,6 +94,8 @@ Use these 3 Basic Settings:
 1. Open Command Prompt or PowerShell on the workstation.
 2. Run this command-line tool - gpupdate /force
 3. Log into a user account from that organizational unit you applied the Group Policy object on, and check to see that the changes applied.
+<img width="1018" height="784" alt="image" src="https://github.com/user-attachments/assets/23f660c8-49cc-453a-936c-54624d336181" />
+
 
 ---
 
