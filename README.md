@@ -35,6 +35,9 @@ Installation & Setup Steps
 5. Install the role.
 6. After the installation is done, click on “Promote this server to a domain controller.”
 7. Create a new forest (example: qclouted.local).
+<img width="1223" height="888" alt="image" src="https://github.com/user-attachments/assets/56136ab9-75c1-43b3-bd6a-75ed58748407" />
+
+
   
 
 ### 2 - Create Organizational Units (OUs)
@@ -46,6 +49,8 @@ Sales<br>
 IT<br>
 HR<br>
 Finance<br>
+<img width="1018" height="777" alt="image" src="https://github.com/user-attachments/assets/73d59c33-c45b-43d3-a7ab-78f402a492bf" />
+
 
 
 
@@ -55,6 +60,8 @@ Finance<br>
 3. Click on the link below, and follow the instructions in the document. https://docs.google.com/document/d/1_3BeYu5J2PcIoxjmSKD9ya60L0NzdNTGK9vevE_I7zY/edit?usp=sharing<br>
 <br>Note: Follow these instructions if you cannot copy and paste the script into your Windows Server.<br> 
 Click on the settings of your virtual machine via VirtualBox. Go to General, and then features, and then make both the Shared Clipboard along with the Drag-and-Drop Bidirectional. After doing this, load up your virtual machine, and click on Devices on the top, then click Insert Guest Additions CD Image. You should now be able to copy and paste the script into your domain!
+<img width="979" height="596" alt="image" src="https://github.com/user-attachments/assets/67279ba0-84f6-49e6-86c7-59b4930c3690" />
+
 
 
 ### 4 - Configure Group Policy for Departments
@@ -62,18 +69,26 @@ Click on the settings of your virtual machine via VirtualBox. Go to General, and
 2. In Group Policy management, right-click the organizational unit (OU) that you want to configure (example: HR) Then click on, "Create a GPO in this domain, and Link it here."
 3. Name the policy. (example: HR Basic Policy), then Edit it. It should take you to the Group Policy Management Editor.
 
+
 Use these 3 Basic Settings:
 1. Minimimum Password Length
 - Computer Configuration → Policies → Windows Settings → Security Settings → Account Policies → Password Policy
 - In the right panel, double-click Minimum password length, then set 8 characters, then Click OK.
+<img width="1022" height="778" alt="image" src="https://github.com/user-attachments/assets/6e585cb5-d861-429a-b480-dca8758e7a33" />
 
 2. Prevent Desktop Background Changes.
 - User Configuration → Policies → Administrative Templates → Desktop → Desktop
 - In the right panel, double-click Desktop Wallpaper, then set it to Enabled, then click OK. Make sure to add a Wallpaper Name so that you can click Apply, then OK.
+<img width="1022" height="777" alt="image" src="https://github.com/user-attachments/assets/59889e5f-a742-4f3c-8b9f-ea42b1353862" />
 
-3. Lock Screen Timeout
+
+
+
+3. Screen Saver Timeout
 - User Configuration → Policies → Administrative Templates → Control Panel → Personalization
 - In the panel on the right, double-click Screen saver timeout, then set it to 300 seconds (5 minutes), then Click OK.
+<img width="1019" height="777" alt="image" src="https://github.com/user-attachments/assets/669d073d-2704-46e7-b093-773ef5291694" />
+
 
 ### 5 - Apply the Group Policy Object (GPO)
 1. Open Command Prompt or PowerShell on the workstation.
